@@ -16,6 +16,7 @@ class CalculatorOperation {
 
 	// untuk menambahkan operator di kalkulator
 	addOperation(operation) {
+		if (this.operationNumber[this.operationNumber.length - 1] === operation) return;
 		this.operationNumber += operation;
 	}
 
